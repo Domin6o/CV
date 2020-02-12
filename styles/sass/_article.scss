@@ -1,0 +1,22 @@
+article {
+    border-left: 1rem solid $myblue;
+
+    section {
+
+        h2 {
+            color: white;
+            background-color: $myred;
+        }
+    
+        div.col > div.row {
+            margin-left: 1rem;
+        }
+
+        div.skills {
+            img {
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}

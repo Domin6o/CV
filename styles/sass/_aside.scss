@@ -1,0 +1,37 @@
+aside {
+    border-right: 1rem solid white;
+    color: white;
+    background-color: $myblue;
+
+    h2 {
+        border-bottom: 0.5rem solid $myred;
+    }
+
+    .contact {
+        font-size: 2rem;
+
+        div.row {
+            margin: 0 0 1rem 1rem;
+            
+            i {
+                display: block;
+                margin: auto 2rem;
+                font-size: 4rem;
+            }
+
+            p {
+                margin: 0;
+                font-size: 2rem;
+                overflow: hidden;
+            }
+        }
+    }
+
+    div.assets {
+        div.assets-item {
+            div:last-of-type p {
+                font-weight: bold;
+            }
+        }
+    }
+}

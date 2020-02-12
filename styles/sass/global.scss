@@ -1,38 +1,16 @@
 @import "variables";
+@import "header";
+@import "aside";
+@import "article";
 
-header {
-    background-color: $myblue;
-    border-bottom: 4rem solid $myred;
+html {
+    font-size: 12px;
 
-    div.photo-corner {
-        // padding: 0;
-        padding: 1rem 6rem;
-        border-right: 0.8rem solid white;
-
-        img {
-            border: 0.8rem solid white;
-        }
-    }
-
-    div.title-main {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        position: relative;
-        padding-left: 4rem;
-        
-        h1 {
-            margin: 1rem 0;
-            font-size: 6rem;
-            color: white;
-        }
-
-        h4 {
-            margin: 0;
-            color: white;
-        }
+    h1, h2, h3 {
+        text-transform: uppercase;
     }
 }
+
 
 main {
     h2 {
@@ -43,53 +21,7 @@ main {
     }
 
     p {
-        font-size: 1.2rem;
-    }
-
-    aside {
-        border-right: 0.8rem solid white;
-        color: white;
-        background-color: $myblue;
-
-        h2 {
-            border-bottom: 0.5rem solid $myred;
-        }
-
-        .contact {
-            font-size: 2rem;
-            text-align: center;
-
-            p {
-                font-size: 2rem;
-                text-align: left;
-                overflow: hidden;
-            }
-        }
-
-        div.assets {
-            div.assets-item {
-                div:last-of-type p {
-                    font-weight: bold;
-                }
-            }
-        }
-    }
-    
-    article {
-        border-left: 0.8rem solid $myblue;
-        // padding-top: 1rem;
-
-        section {
-
-            h2 {
-                color: white;
-                background-color: $myred;
-            }
-        
-            div.col > div.row {
-                margin-left: 1rem;
-            }
-        }
+        font-size: 1.5rem;
     }
 }
 
