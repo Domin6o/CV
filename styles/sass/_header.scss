@@ -3,11 +3,12 @@ header {
     border-bottom: 4rem solid $myred;
 
     div.photo-corner {
-        padding: 1rem 10rem;
         border-right: 1rem solid white;
+        text-align: center;
 
         img {
-            border: 1rem solid white;
+            height: 17rem;
+            border: 0.5rem solid white;
         }
     }
 
@@ -17,18 +18,35 @@ header {
 
             img {
                 display: block;
-                margin: 1rem auto;
+                height: 15rem;
+                margin: 1rem;
             }
 
             h1 {
                 margin-bottom: 1rem 0;
                 font-size: 6rem;
+                font-weight: bold;
                 color: white;
             }
     
-            a {
-                font-size: 2rem;
-                color: white;
+            // a {
+            //     margin-bottom: -2rem;
+            //     font-size: 2rem;
+            //     color: white;
+            // }
+        }
+
+        a {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin: 0 1rem -3.2rem 0;
+            text-decoration: none;
+            font-size: 2rem;
+            color: white;
+
+            &:hover {
+                text-decoration: underline;
             }
         }
     }

@@ -7,15 +7,21 @@ article {
             color: white;
             background-color: $myred;
         }
-    
-        div.col > div.row {
-            margin-left: 1rem;
-        }
 
         div.skills {
-            img {
-                display: block;
-                margin: auto;
+            div.row {
+                margin-left: 1rem;
+
+                img {
+                    display: block;
+                    margin: auto;
+                }
+
+                &:last-of-type {
+                    img {
+                        padding: 0 1rem;
+                    }
+                }
             }
         }
     }

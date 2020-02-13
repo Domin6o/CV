@@ -7,31 +7,70 @@ aside {
         border-bottom: 0.5rem solid $myred;
     }
 
-    .contact {
+    & > div.row {
+        // margin-bottom: 1rem;
+    }
+
+    div.contact {
         font-size: 2rem;
 
         div.row {
-            margin: 0 0 1rem 1rem;
+            margin-bottom: 1rem;
             
             i {
-                display: block;
-                margin: auto 2rem;
+                margin: auto 1rem;
                 font-size: 4rem;
             }
 
             p {
                 margin: 0;
                 font-size: 2rem;
-                overflow: hidden;
+                overflow-wrap: anywhere;
             }
+
+            &:first-of-type {
+                p {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+    div.experience {
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        div.row div:not(:first-of-type):not(:last-of-type) {
+            p {
+                // font-size: 1rem;
+            }
+        }
+
+        p {
+            font-size: 1.3rem;
         }
     }
 
     div.assets {
         div.assets-item {
             div:last-of-type p {
+                font-size: 2rem;
                 font-weight: bold;
+
+                &:nth-of-type(2) {
+                    font-weight: normal;
+                }
             }
+        }
+    }
+
+    div.hobby {
+        span {
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: bold;
+            white-space: nowrap;
         }
     }
 }
